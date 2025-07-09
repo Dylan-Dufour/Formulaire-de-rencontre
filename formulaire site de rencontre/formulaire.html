@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de rencontre</title>
+    <link rel="stylesheet" href="./assets/css/formulaire_rencontre.css" />
+</head>
+
+<body>
+    <link rel="stylesheet" href="https://avis-rencontre.com/wp-content/uploads/2017/11/logo-elite-rencontre.jpg">
+    <form="" method="post">
+        
+    <!-- Champs du formulaire ici -->
+        <label for="firstname">Prénom :</label>
+        <input type="text" id="firstname" name="firstname" required />
+
+        <label for="lastname">Nom :</label>
+        <input type="text" id="lastname" name="lastname" required />
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" required />
+
+        <label for="confirmpassword">Confirmez le mot de passe</label>
+        <input type="password" id="confirmpassword" name="password" required />
+
+        <!--Informations -->
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" min="18" max="99" required />
+        <label for="sexe">sexe</label>
+        <select type="sexe" id="sexe" name="sexe" required>
+            <option value="homme">Homme</option>
+            <option value="femme">Femme</option>
+            <option value="autre">Autre</option>
+
+        </select>
+        <label for="orientation">orientation</label>
+        <select id="orientation" name="orientation" required>
+            <option value="hetero">heterosexuel</option>
+            <option value="homo">homosexuel</option>
+            <option value="bi">bisexuel</option>
+            <option value="autre">Autre</option>
+
+
+        </select>
+
+        <label for="photo">Photo de profil</label>
+        <input type="file" id="photo" name="photo" accept="image/*" required>
+        <button type="submit">Envoyer</button>
+        </form>
+</body>
+
+<!--Description physique-->
+<label for="taille">taille en cm</label>
+<input type="number" name="taille" id="taille" min="100" max="250" required>
+<label for="poids">poids en kg</label>
+<input type="number" id="poids" name="poids" min="30" max="200" required>
+<label for="yeux">Couleur des yeux :</label>
+<select id="yeux" name="yeux" required>
+    <option value="">--Choisissez--</option>
+    <option value="bleus">Bleus</option>
+    <option value="verts">Verts</option>
+    <option value="marron">Marron</option>
+    <option value="noisette">Noisette</option>
+    <option value="gris">Gris</option>
+    <option value="autre">Autre</option>
+</select>
+
+<label for="Cheveux">couleur de Cheveux</label>
+<select id="cheveux" name="cheveux" required>
+    <option value="">--Choisissez--</option>
+    <option value="marron">Marron</option>
+    <option value="noisette">Noisette</option>
+    <option value="gris">Gris</option>
+    <option value="autre">Roux</option>
+</select>
+
+<!--Personnalité-->
+<label for="Description">a propos de moi</label>
+<textarea name="Description" id="Description" rows="5" cols="40" placeholder="descris toi" required></textarea>
+<label for="trait de personnalité "></label>
+<input type="checkbox" id="drole" name="personnalité" value="drole">
+<label for="drole">drole</label>
+<input type="chechbox" id="calme" name="personnalité" value="calme">
+<label for="calme">calme</label>
+<input type="checkbox" id="curieux" name="personnalité" value="curieux">
+<label for="ambitieux">calme</label>
+<input type="checkbox" id="ambitieux" name="ambitieux" value="ambitieux">
+
+<!--Loisirs et centres d'interets-->
+<label>Loisirs et centres d'interets</label>
+<input type="checkbox" id="musique" name="loisirs" value="Musique">
+<label for="musique">Musique</label>
+
+<input type="checkbox" id="cinema" name="loisirs" value="Cinéma">
+<label for="cinema">Cinéma</label>
+
+<input type="checkbox" id="sport" name="loisirs" value="Sport">
+<label for="sport">Sport</label>
+
+<input type="checkbox" id="lecture" name="loisirs" value="Lecture">
+<label for="lecture">Lecture</label>
+
+<input type="checkbox" id="voyages" name="loisirs" value="Voyages">
+<label for="voyages">Voyages</label>
+
+<input type="checkbox" id="cuisine" name="loisirs" value="Cuisine">
+<label for="cuisine">Cuisine</label>
+
+<input type="checkbox" id="jeux" name="loisirs" value="Jeux vidéo">
+<label for="jeux">Jeux vidéo</label>
+
+<!--Localisation graphique-->
+<label for="ville"></label>
+<input type="text" id="ville" name="ville" placeholder="" required>
+
+<label for="code postal">code postal</label>
+<input type="text" id="code_postal" name="code_postal" placeholder="">
+
+</html>
